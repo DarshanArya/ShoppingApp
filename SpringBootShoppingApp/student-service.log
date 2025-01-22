@@ -1,0 +1,672 @@
+2025-01-22T12:05:28.053+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 10176 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:05:28.055+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:05:28.106+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-22T12:05:28.108+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-22T12:05:28.711+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:05:28.761+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2025-01-22T12:05:29.198+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:05:29.214+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:05:29.215+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:05:29.255+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:05:29.255+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1145 ms
+2025-01-22T12:05:29.389+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:05:29.432+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-22T12:05:29.463+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:05:29.673+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:05:29.697+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-22T12:05:29.971+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@189ec0b7
+2025-01-22T12:05:29.974+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-22T12:05:30.049+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:05:30.159+05:30 ERROR 10176 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2025-01-22T12:05:30.159+05:30  WARN 10176 --- [SpringbootShoppingApp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2025-01-22T12:05:30.161+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-22T12:05:30.170+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-22T12:05:30.172+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-22T12:05:30.179+05:30  INFO 10176 --- [SpringbootShoppingApp] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-22T12:05:30.195+05:30 ERROR 10176 --- [SpringbootShoppingApp] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.example.demo.SpringBootShoppingAppApplication.main(SpringBootShoppingAppApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: org.hibernate.AnnotationException: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:289) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:226) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:162) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:410) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:401) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:257) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 18 common frames omitted
+
+2025-01-22T12:05:48.131+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 6696 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:05:48.136+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:05:48.218+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-22T12:05:48.218+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-22T12:05:48.946+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:05:49.011+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2025-01-22T12:05:49.572+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:05:49.588+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:05:49.589+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:05:49.629+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:05:49.629+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1410 ms
+2025-01-22T12:05:49.754+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:05:49.806+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-22T12:05:49.839+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:05:50.088+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:05:50.121+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-22T12:05:50.416+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6deb8f19
+2025-01-22T12:05:50.418+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-22T12:05:50.501+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:05:50.625+05:30 ERROR 6696 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2025-01-22T12:05:50.625+05:30  WARN 6696 --- [SpringbootShoppingApp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2025-01-22T12:05:50.632+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-22T12:05:50.663+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-22T12:05:50.665+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-22T12:05:50.676+05:30  INFO 6696 --- [SpringbootShoppingApp] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-22T12:05:50.695+05:30 ERROR 6696 --- [SpringbootShoppingApp] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.example.demo.SpringBootShoppingAppApplication.main(SpringBootShoppingAppApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: org.hibernate.AnnotationException: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:289) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:226) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:162) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:410) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:401) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:257) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 18 common frames omitted
+
+2025-01-22T12:08:55.603+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 19900 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:08:55.606+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:08:55.661+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-22T12:08:55.661+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-22T12:08:56.373+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:08:56.433+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2025-01-22T12:08:56.986+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:08:57.003+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:08:57.004+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:08:57.060+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:08:57.060+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1398 ms
+2025-01-22T12:08:57.214+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:08:57.267+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-22T12:08:57.303+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:08:57.573+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:08:57.608+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-22T12:08:57.938+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28cd36c
+2025-01-22T12:08:57.941+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-22T12:08:58.023+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:08:58.124+05:30 ERROR 19900 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2025-01-22T12:08:58.124+05:30  WARN 19900 --- [SpringbootShoppingApp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2025-01-22T12:08:58.126+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-22T12:08:58.141+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-22T12:08:58.144+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-22T12:08:58.154+05:30  INFO 19900 --- [SpringbootShoppingApp] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-22T12:08:58.174+05:30 ERROR 19900 --- [SpringbootShoppingApp] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.example.demo.SpringBootShoppingAppApplication.main(SpringBootShoppingAppApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: org.hibernate.AnnotationException: Entity 'com.example.demo.entity.Product' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:289) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:226) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:162) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:410) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:401) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:257) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 18 common frames omitted
+
+2025-01-22T12:11:16.262+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 28448 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:11:16.263+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:11:16.315+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-22T12:11:16.315+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-22T12:11:16.901+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:11:16.961+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2025-01-22T12:11:17.538+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:11:17.552+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:11:17.552+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:11:17.613+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:11:17.613+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1297 ms
+2025-01-22T12:11:17.788+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:11:17.849+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-22T12:11:17.893+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:11:18.180+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:11:18.216+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-22T12:11:18.555+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21864193
+2025-01-22T12:11:18.557+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-22T12:11:18.640+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:11:19.670+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T12:11:20.221+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:11:20.516+05:30  WARN 28448 --- [SpringbootShoppingApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T12:11:20.952+05:30  WARN 28448 --- [SpringbootShoppingApp] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0a8072a4-62b0-4daa-bf17-0428790a7858
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-22T12:11:20.971+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-01-22T12:11:21.143+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-22T12:11:21.185+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-22T12:11:21.193+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Started SpringBootShoppingAppApplication in 5.291 seconds (process running for 5.93)
+2025-01-22T12:13:01.949+05:30  INFO 28448 --- [SpringbootShoppingApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-01-22T12:13:01.953+05:30  INFO 28448 --- [SpringbootShoppingApp] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-22T12:13:01.961+05:30  INFO 28448 --- [SpringbootShoppingApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-22T12:13:01.965+05:30  INFO 28448 --- [SpringbootShoppingApp] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:13:01.971+05:30  INFO 28448 --- [SpringbootShoppingApp] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-22T12:13:01.993+05:30  INFO 28448 --- [SpringbootShoppingApp] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-22T12:13:02.111+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 28448 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:13:02.112+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:13:02.405+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:13:02.424+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2025-01-22T12:13:02.502+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:13:02.502+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:13:02.503+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:13:02.525+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:13:02.525+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 408 ms
+2025-01-22T12:13:02.557+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:13:02.559+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:13:02.570+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:13:02.570+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-01-22T12:13:02.585+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42bb23bb
+2025-01-22T12:13:02.585+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-01-22T12:13:02.587+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:13:02.620+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T12:13:02.659+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:13:02.677+05:30  WARN 28448 --- [SpringbootShoppingApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T12:13:02.766+05:30  WARN 28448 --- [SpringbootShoppingApp] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 26f47e3f-0d6e-4a53-a955-56a5d6d52b46
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-22T12:13:02.767+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-01-22T12:13:02.785+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-22T12:13:02.793+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-22T12:13:02.797+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Started SpringBootShoppingAppApplication in 0.741 seconds (process running for 107.535)
+2025-01-22T12:13:02.800+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-01-22T12:13:04.239+05:30  INFO 28448 --- [SpringbootShoppingApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 11 class path changes (0 additions, 0 deletions, 11 modifications)
+2025-01-22T12:13:04.242+05:30  INFO 28448 --- [SpringbootShoppingApp] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-22T12:13:04.248+05:30  INFO 28448 --- [SpringbootShoppingApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-22T12:13:04.251+05:30  INFO 28448 --- [SpringbootShoppingApp] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:13:04.252+05:30  INFO 28448 --- [SpringbootShoppingApp] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-01-22T12:13:04.257+05:30  INFO 28448 --- [SpringbootShoppingApp] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-01-22T12:13:04.329+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 28448 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:13:04.331+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:13:04.461+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:13:04.469+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-01-22T12:13:04.544+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:13:04.544+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:13:04.545+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:13:04.564+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:13:04.564+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 231 ms
+2025-01-22T12:13:04.589+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:13:04.591+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:13:04.602+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:13:04.602+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-01-22T12:13:04.627+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@773598fe
+2025-01-22T12:13:04.628+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-01-22T12:13:04.629+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:13:04.653+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T12:13:04.688+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:13:04.730+05:30  WARN 28448 --- [SpringbootShoppingApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T12:13:04.784+05:30  WARN 28448 --- [SpringbootShoppingApp] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 59b2960f-7550-47e9-8d70-8a862a6f8369
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-22T12:13:04.784+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-01-22T12:13:04.809+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-22T12:13:04.819+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-22T12:13:04.823+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Started SpringBootShoppingAppApplication in 0.518 seconds (process running for 109.561)
+2025-01-22T12:13:04.826+05:30  INFO 28448 --- [SpringbootShoppingApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-01-22T12:13:07.618+05:30  INFO 28448 --- [SpringbootShoppingApp] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-01-22T12:13:07.618+05:30  INFO 28448 --- [SpringbootShoppingApp] [RMI TCP Connection(13)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-22T12:13:07.622+05:30  INFO 28448 --- [SpringbootShoppingApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-22T12:13:07.624+05:30  INFO 28448 --- [SpringbootShoppingApp] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:13:07.625+05:30  INFO 28448 --- [SpringbootShoppingApp] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-01-22T12:13:07.643+05:30  INFO 28448 --- [SpringbootShoppingApp] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-01-22T12:13:13.842+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 18908 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:13:13.844+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:13:13.895+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-22T12:13:13.895+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-22T12:13:14.450+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:13:14.496+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2025-01-22T12:13:14.959+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:13:14.970+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:13:14.971+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:13:15.019+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:13:15.020+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1124 ms
+2025-01-22T12:13:15.137+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:13:15.190+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-22T12:13:15.228+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:13:15.459+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:13:15.484+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-22T12:13:15.749+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e2979b4
+2025-01-22T12:13:15.751+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-22T12:13:15.813+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:13:16.510+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T12:13:16.580+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:13:16.767+05:30  WARN 18908 --- [SpringbootShoppingApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T12:13:17.049+05:30  WARN 18908 --- [SpringbootShoppingApp] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f98d10a0-50d7-4f95-8e41-0be2d2bd0d47
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-22T12:13:17.066+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-01-22T12:13:17.196+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-22T12:13:17.228+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-22T12:13:17.234+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Started SpringBootShoppingAppApplication in 3.748 seconds (process running for 4.336)
+2025-01-22T12:31:37.729+05:30  INFO 18908 --- [SpringbootShoppingApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-22T12:31:37.733+05:30  INFO 18908 --- [SpringbootShoppingApp] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-22T12:31:37.738+05:30  INFO 18908 --- [SpringbootShoppingApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-22T12:31:37.743+05:30  INFO 18908 --- [SpringbootShoppingApp] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:31:37.747+05:30  INFO 18908 --- [SpringbootShoppingApp] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-22T12:31:37.770+05:30  INFO 18908 --- [SpringbootShoppingApp] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-22T12:31:37.855+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 18908 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:31:37.855+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:31:38.001+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:31:38.012+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-01-22T12:31:38.108+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:31:38.110+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:31:38.110+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:31:38.134+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:31:38.134+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 277 ms
+2025-01-22T12:31:38.194+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:31:38.196+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:31:38.206+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:31:38.208+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-01-22T12:31:38.225+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d60323b
+2025-01-22T12:31:38.225+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-01-22T12:31:38.228+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:31:38.270+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T12:31:38.340+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:31:38.394+05:30  WARN 18908 --- [SpringbootShoppingApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T12:31:38.471+05:30  WARN 18908 --- [SpringbootShoppingApp] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 62cb8463-711b-402a-bd8b-cf7643effa51
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-22T12:31:38.473+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-01-22T12:31:38.509+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-22T12:31:38.520+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-22T12:31:38.524+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Started SpringBootShoppingAppApplication in 0.696 seconds (process running for 1105.626)
+2025-01-22T12:31:38.527+05:30  INFO 18908 --- [SpringbootShoppingApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-01-22T12:31:51.883+05:30  INFO 18908 --- [SpringbootShoppingApp] [RMI TCP Connection(30)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-01-22T12:31:51.884+05:30  INFO 18908 --- [SpringbootShoppingApp] [RMI TCP Connection(30)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-22T12:31:51.889+05:30  INFO 18908 --- [SpringbootShoppingApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-22T12:31:51.891+05:30  INFO 18908 --- [SpringbootShoppingApp] [RMI TCP Connection(30)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:31:51.892+05:30  INFO 18908 --- [SpringbootShoppingApp] [RMI TCP Connection(30)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-01-22T12:31:51.897+05:30  INFO 18908 --- [SpringbootShoppingApp] [RMI TCP Connection(30)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-01-22T12:31:58.769+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 20044 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:31:58.771+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:31:58.818+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-22T12:31:58.819+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-22T12:31:59.367+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:31:59.427+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2025-01-22T12:31:59.893+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:31:59.905+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:31:59.905+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:31:59.949+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:31:59.950+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1131 ms
+2025-01-22T12:32:00.075+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:32:00.119+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-22T12:32:00.149+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:32:00.397+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:32:00.427+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-22T12:32:00.728+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d6720ae
+2025-01-22T12:32:00.731+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-22T12:32:00.815+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:32:01.561+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T12:32:01.610+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:32:01.850+05:30  WARN 20044 --- [SpringbootShoppingApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T12:32:02.183+05:30  WARN 20044 --- [SpringbootShoppingApp] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 04e62689-cfdf-4aaa-bbcd-19191b2829ca
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-22T12:32:02.199+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-01-22T12:32:02.354+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-22T12:32:02.392+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-22T12:32:02.400+05:30  INFO 20044 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Started SpringBootShoppingAppApplication in 4.005 seconds (process running for 4.676)
+2025-01-22T12:32:15.468+05:30  INFO 20044 --- [SpringbootShoppingApp] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22T12:32:15.469+05:30  INFO 20044 --- [SpringbootShoppingApp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-22T12:32:15.470+05:30  INFO 20044 --- [SpringbootShoppingApp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-22T12:33:12.429+05:30  INFO 20044 --- [SpringbootShoppingApp] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-01-22T12:33:12.431+05:30  INFO 20044 --- [SpringbootShoppingApp] [RMI TCP Connection(9)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-22T12:33:12.436+05:30  INFO 20044 --- [SpringbootShoppingApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-22T12:33:12.440+05:30  INFO 20044 --- [SpringbootShoppingApp] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:33:12.442+05:30  INFO 20044 --- [SpringbootShoppingApp] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-22T12:33:12.449+05:30  INFO 20044 --- [SpringbootShoppingApp] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-22T12:33:16.436+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 18232 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:33:16.438+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:33:16.491+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-22T12:33:16.492+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-22T12:33:17.157+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:33:17.211+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2025-01-22T12:33:17.650+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:33:17.661+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:33:17.661+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:33:17.717+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:33:17.717+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1224 ms
+2025-01-22T12:33:17.853+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:33:17.909+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-22T12:33:17.941+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:33:18.168+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:33:18.198+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-22T12:33:18.490+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13092f20
+2025-01-22T12:33:18.492+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-22T12:33:18.564+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:33:19.319+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T12:33:19.375+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:33:19.632+05:30  WARN 18232 --- [SpringbootShoppingApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T12:33:19.943+05:30  WARN 18232 --- [SpringbootShoppingApp] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6ffe74af-f6f0-489b-9891-ac98dceddf4f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-22T12:33:19.955+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-01-22T12:33:20.097+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-22T12:33:20.130+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-22T12:33:20.137+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Started SpringBootShoppingAppApplication in 4.056 seconds (process running for 4.739)
+2025-01-22T12:33:48.231+05:30  INFO 18232 --- [SpringbootShoppingApp] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22T12:33:48.232+05:30  INFO 18232 --- [SpringbootShoppingApp] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-22T12:33:48.233+05:30  INFO 18232 --- [SpringbootShoppingApp] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-22T12:35:33.461+05:30  INFO 18232 --- [SpringbootShoppingApp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 11 class path changes (0 additions, 0 deletions, 11 modifications)
+2025-01-22T12:35:33.465+05:30  INFO 18232 --- [SpringbootShoppingApp] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-22T12:35:33.470+05:30  INFO 18232 --- [SpringbootShoppingApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-22T12:35:33.474+05:30  INFO 18232 --- [SpringbootShoppingApp] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:35:33.477+05:30  INFO 18232 --- [SpringbootShoppingApp] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-22T12:35:33.485+05:30  INFO 18232 --- [SpringbootShoppingApp] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-22T12:35:33.557+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 18232 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:35:33.557+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:35:33.722+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:35:33.737+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-01-22T12:35:33.814+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:35:33.815+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:35:33.815+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:35:33.837+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:35:33.838+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 279 ms
+2025-01-22T12:35:33.874+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:35:33.877+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:35:33.886+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:35:33.887+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-01-22T12:35:33.901+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5167ad0b
+2025-01-22T12:35:33.902+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-01-22T12:35:33.903+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:35:33.938+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T12:35:33.960+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:35:34.021+05:30  WARN 18232 --- [SpringbootShoppingApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T12:35:34.102+05:30  WARN 18232 --- [SpringbootShoppingApp] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 95a6e913-89d0-4954-90af-5a21eb80227a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-22T12:35:34.104+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-01-22T12:35:34.131+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-22T12:35:34.144+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-22T12:35:34.147+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Started SpringBootShoppingAppApplication in 0.61 seconds (process running for 138.75)
+2025-01-22T12:35:34.150+05:30  INFO 18232 --- [SpringbootShoppingApp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-01-22T12:35:40.780+05:30  INFO 18232 --- [SpringbootShoppingApp] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22T12:35:40.780+05:30  INFO 18232 --- [SpringbootShoppingApp] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-22T12:35:40.781+05:30  INFO 18232 --- [SpringbootShoppingApp] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-22T12:35:50.476+05:30  INFO 18232 --- [SpringbootShoppingApp] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-01-22T12:35:50.478+05:30  INFO 18232 --- [SpringbootShoppingApp] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-22T12:35:50.486+05:30  INFO 18232 --- [SpringbootShoppingApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-22T12:35:50.490+05:30  INFO 18232 --- [SpringbootShoppingApp] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:35:50.491+05:30  INFO 18232 --- [SpringbootShoppingApp] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-01-22T12:35:50.500+05:30  INFO 18232 --- [SpringbootShoppingApp] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-01-22T12:35:54.728+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 27776 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:35:54.730+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:35:54.788+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-22T12:35:54.789+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-22T12:35:55.414+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:35:55.464+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2025-01-22T12:35:55.958+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:35:55.971+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:35:55.972+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:35:56.027+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:35:56.027+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1238 ms
+2025-01-22T12:35:56.183+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:35:56.238+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-22T12:35:56.283+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:35:56.573+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:35:56.613+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-22T12:35:56.944+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@491256a
+2025-01-22T12:35:56.947+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-22T12:35:57.040+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:35:57.903+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T12:35:57.948+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:35:58.187+05:30  WARN 27776 --- [SpringbootShoppingApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T12:35:58.542+05:30  WARN 27776 --- [SpringbootShoppingApp] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f784985b-b508-4462-b636-5f4cceeab3f0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-22T12:35:58.558+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-01-22T12:35:58.724+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-22T12:35:58.767+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-22T12:35:58.777+05:30  INFO 27776 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Started SpringBootShoppingAppApplication in 4.403 seconds (process running for 5.071)
+2025-01-22T12:37:00.529+05:30  INFO 27776 --- [SpringbootShoppingApp] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-01-22T12:37:00.532+05:30  INFO 27776 --- [SpringbootShoppingApp] [RMI TCP Connection(9)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-22T12:37:00.537+05:30  INFO 27776 --- [SpringbootShoppingApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-22T12:37:00.541+05:30  INFO 27776 --- [SpringbootShoppingApp] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:37:00.544+05:30  INFO 27776 --- [SpringbootShoppingApp] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-22T12:37:00.551+05:30  INFO 27776 --- [SpringbootShoppingApp] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-22T12:37:03.898+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Starting SpringBootShoppingAppApplication using Java 21.0.5 with PID 26104 (C:\Users\2380209\git\repository\SpringBootShoppingApp\target\classes started by 2380209 in C:\Users\2380209\git\repository\SpringBootShoppingApp)
+2025-01-22T12:37:03.901+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T12:37:03.971+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-22T12:37:03.971+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-22T12:37:04.726+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T12:37:04.781+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2025-01-22T12:37:05.378+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-22T12:37:05.395+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-22T12:37:05.396+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T12:37:05.477+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-22T12:37:05.477+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1502 ms
+2025-01-22T12:37:05.650+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T12:37:05.723+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-22T12:37:05.766+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-22T12:37:06.124+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T12:37:06.176+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-22T12:37:06.587+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75f74642
+2025-01-22T12:37:06.589+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-22T12:37:06.665+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22T12:37:07.461+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T12:37:07.528+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T12:37:07.755+05:30  WARN 26104 --- [SpringbootShoppingApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T12:37:08.078+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-22T12:37:08.116+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-22T12:37:08.124+05:30  INFO 26104 --- [SpringbootShoppingApp] [restartedMain] c.e.d.SpringBootShoppingAppApplication   : Started SpringBootShoppingAppApplication in 4.622 seconds (process running for 5.223)
+2025-01-22T12:37:19.614+05:30  INFO 26104 --- [SpringbootShoppingApp] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22T12:37:19.615+05:30  INFO 26104 --- [SpringbootShoppingApp] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-22T12:37:19.616+05:30  INFO 26104 --- [SpringbootShoppingApp] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
