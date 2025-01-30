@@ -1,7 +1,10 @@
 package com.example.demo.controller;
 
+import java.util.List;
+
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -41,6 +44,11 @@ private static final Logger logger = (Logger) LoggerFactory.getLogger(ProductCon
 	@DeleteMapping("/delete/{id}")
 	public String deleteCart(@PathVariable("id") int cartId) {
 		return service.deletecart(cartId);
+	}
+	@GetMapping("/getAll") // http://localhost:8081/products/getAll
+	public List<Cart> getAllCart() {
+		
+		return service.getAllCart();
 	}
 
 
